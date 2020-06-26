@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .navbar-item {
   position: relative;
   overflow: hidden;
@@ -33,3 +29,16 @@
   margin-left: 0;
   transition: left 200ms ease-out;
 }
+
+@responsive {
+  .logo-md {
+    width: 147px;
+  }
+  .logo-sm {
+    width: 94px;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
