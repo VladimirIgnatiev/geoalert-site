@@ -1,0 +1,10 @@
+{
+  "title": "Geoalert",
+  "description": "Geoalert analytics platform",
+  "navbar": {
+    "products": "Products",
+    "company": "Company",
+    "blog": "Blog",
+    "contacts": "Contacts"
+  }
+}
