@@ -6,5 +6,10 @@
     "company": "Company",
     "blog": "Blog",
     "contacts": "Contacts"
+  },
+  "try-demo": "Try demo",
+  "main": {
+    "title": "Geoalert Analytics Platform",
+    "subtitle": "Stay aware, analyse and make decisions faster - global geoanalytics platform powered by Earth Observation and AI"
   }
 }

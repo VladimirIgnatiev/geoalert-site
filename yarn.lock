@@ -2038,6 +2038,11 @@
   dependencies:
     wonka "^4.0.14"
 
+"@use-it/event-listener@^0.1.2":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@use-it/event-listener/-/event-listener-0.1.3.tgz#a9920b2819d211cf55e68e830997546eec6886d3"
+  integrity sha512-UCHkLOVU+xj3/1R8jXz8GzDTowkzfIDPESOBlVC2ndgwUSBEqiFdwCoUEs2lcGhJOOiEdmWxF+T23C5+60eEew==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -13858,6 +13863,26 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-roboto-cyrillic@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-cyrillic/-/typeface-roboto-cyrillic-0.0.2.tgz#b111b606d19870acba79a9532e20077838c1816e"
+  integrity sha512-wnlveClMJVupSLApa+fmL6E3JTUh4RqtD+biELrbeAGWLvpVTLLGbuRBfBbOSCHhoaxuIsJTgYH0KhtY6fDsdg==
+
+typeface-roboto-slab-cyrillic@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-slab-cyrillic/-/typeface-roboto-slab-cyrillic-0.0.3.tgz#df7fca53b67afc4c37fbc05498865d6d3882a16a"
+  integrity sha512-otYd1Jd2/BXKYZPV/ziq6LiAlJaqH5qKZ5U79FwKXl8M7i4hmbi3Uu8QETtQ/hVNUREx2S8FsulPHtwFPq5QeQ==
+
+typeface-roboto-slab@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-slab/-/typeface-roboto-slab-1.1.4.tgz#4b35c91d287acd93a598cc7db4e00b8b703c32e4"
+  integrity sha512-/v4k/tcXDxOus6f6tZGtHlh9IB2vDXC2bkeaZ6X6+OZlEA0rHLnoCju+SQjDJc8aIOKSEJETVP2Ia9kTumKAKQ==
+
+typeface-roboto@0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.75.tgz#98d5ba35ec234bbc7172374c8297277099cc712b"
+  integrity sha512-VrR/IiH00Z1tFP4vDGfwZ1esNqTiDMchBEXYY9kilT6wRGgFoCAlgkEUMHb1E3mB0FsfZhv756IF0+R+SFPfdg==
+
 ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
@@ -14183,6 +14208,13 @@ urql@^1.9.7:
   dependencies:
     "@urql/core" "^1.12.0"
     wonka "^4.0.14"
+
+use-persisted-state@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/use-persisted-state/-/use-persisted-state-0.3.0.tgz#f8e3d2fd8eee67e0c86fd596c3ea3e8121c07402"
+  integrity sha512-UlWEq0JYg7NbvcRBZ1g6Bwe4SEbYfr1wr/D5mrmfCzSxXSwsPRYygGLlsxHcW58Rf7gGwRPBT23sNVvyVn4WYg==
+  dependencies:
+    "@use-it/event-listener" "^0.1.2"
 
 use@^3.1.0:
   version "3.1.1"

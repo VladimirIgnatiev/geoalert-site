@@ -13,10 +13,10 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@dqunbp`,
     menuLinks: [
-      { id: "navbar.products", name: "products", link: "/#products" },
-      { id: "navbar.company", name: "company", link: "/#company" },
-      { id: "navbar.blog", name: "blog", link: "/#blog" },
-      { id: "navbar.contacts", name: "contacts", link: "/#contacts" },
+      { id: "navbar.products", name: "products", slug: "/#products" },
+      { id: "navbar.company", name: "company", slug: "/#company" },
+      { id: "navbar.blog", name: "blog", slug: "/#blog" },
+      { id: "navbar.contacts", name: "contacts", slug: "/#contacts" },
     ],
   },
   plugins: [

@@ -25,16 +25,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container mx-auto mt-20">
+      <div className="container px-4 mx-auto mt-20">
         <main>{children}</main>
         <footer></footer>
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
