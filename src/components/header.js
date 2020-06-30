@@ -68,7 +68,11 @@ const Header = () => {
                   onKeyDown={() => isNavExpanded && collapseNav()}
                 >
                   <AnchorLink
-                    to={`${window.location.pathname}${slug}`}
+                    to={`${
+                      typeof window !== `undefined`
+                        ? window.location.pathname
+                        : ``
+                    }${slug}`}
                     title={title}
                   >
                     <FormattedMessage id={id} />
