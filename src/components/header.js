@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 import createPersistedState from "use-persisted-state"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import Language from "./language"
 import MainLogo from "../icons/main-logo"
@@ -36,7 +37,7 @@ const Header = () => {
         isNavExpanded ? "h-screen sticky" : ""
       }`}
     >
-      <div className="container w-full h-full mx-auto p-4 flex flex-col justify-between">
+      <div className="container w-full h-full mx-auto p-4 pb-0 flex flex-col justify-between">
         <nav className="flex items-center justify-between flex-wrap">
           <div className="flex-shrink-0">
             <Link to="/">
@@ -57,17 +58,27 @@ const Header = () => {
             }`}
           >
             <ul className="lg:flex-grow lg:flex lg:justify-end">
-              {site.siteMetadata.menuLinks.map(({ id, link }) => (
-                <li key={id} className="navbar-item">
-                  <Link to={link} onClick={isNavExpanded && collapseNav}>
+              {site.siteMetadata.menuLinks.map(({ id, title, slug }, index) => (
+                <div
+                  role="button"
+                  key={id}
+                  tabIndex={index + 1}
+                  className="navbar-item"
+                  onClick={() => isNavExpanded && collapseNav()}
+                  onKeyDown={() => isNavExpanded && collapseNav()}
+                >
+                  <AnchorLink
+                    to={`${window.location.pathname}${slug}`}
+                    title={title}
+                  >
                     <FormattedMessage id={id} />
-                  </Link>
+                  </AnchorLink>
                   <div className="slide hidden lg:block"></div>
-                </li>
+                </div>
               ))}
-              <li className="navbar-item mr-0">
+              <div className="navbar-item mr-0">
                 <Language />
-              </li>
+              </div>
             </ul>
           </div>
         </nav>

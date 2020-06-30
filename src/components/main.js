@@ -19,7 +19,7 @@ const Main = ({ intl }) => {
     }
   `)
   return (
-    <section className="bg-white h-screen py-6 lg:py-20 flex flex-col lg:flex-row">
+    <section className="container mx-auto px-4 bg-white flex flex-col lg:flex-row lg:pb-20">
       <div className="flex-0 md:flex-1 bg-white">
         <div className="xl:max-w-xl lg:max-w-md max-w-full">
           <h1
@@ -57,7 +57,7 @@ const Main = ({ intl }) => {
           />
         </div>
       </div>
-      <div className="flex-1 bg-white mt-8 md:mt-0">
+      <div className="flex-1 bg-white mt-8 lg:mt-0">
         <Img
           className="shadow-2xl"
           fluid={allContentfulAsset.edges[0].node.fluid}

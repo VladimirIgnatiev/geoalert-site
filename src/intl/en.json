@@ -11,5 +11,9 @@
   "main": {
     "title": "Geoalert Analytics Platform",
     "subtitle": "Stay aware, analyse and make decisions faster - global geoanalytics platform powered by Earth Observation and AI"
+  },
+  "what-is": {
+    "title": "What is Geoalert?",
+    "subtitle": "We provide AI powered instant analysis of any location in the world on satellite and aerial imagery to free data analysts from the cartographic routine work and to give cartographers powerful imagery analysis tools"
   }
 }
