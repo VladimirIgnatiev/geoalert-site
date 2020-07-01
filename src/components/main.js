@@ -19,9 +19,9 @@ const Main = ({ intl }) => {
     }
   `)
   return (
-    <section className="container mx-auto px-4 bg-white flex flex-col lg:flex-row lg:pb-20">
+    <section className="container mx-auto bg-white flex flex-col lg:flex-row lg:pb-20">
       <div className="flex-0 md:flex-1 bg-white">
-        <div className="xl:max-w-xl lg:max-w-md max-w-full">
+        <div className="max-w-full lg:max-w-md xl:max-w-lg">
           <h1
             className={`
               leading-tight font-bold font-roboto-slab text-gray-900
@@ -34,24 +34,24 @@ const Main = ({ intl }) => {
           <p
             className={`
               mt-6 md:mt-5 lg:mt-8 xl:mt-10
-              text-gray-800 font-sans
+              leading-tight text-gray-800 font-sans
               text-base sm:text-xl xl:text-2xl
             `}
           >
-            <FormattedMessage id="main.subtitle" />
+            <FormattedMessage id="main.description" />
           </p>
           <AnchorButton
-            asLink
             link="https://demo.geoalert.io"
             className={`
               inline-block 
               mt-5 lg:mt-8 xl:mt-10
-              bg-primary active:bg-primary-light 
-              uppercase text-white font-bold 
+              transition-colors duration-200
+              bg-primary hover:bg-primary-light shadow
+              uppercase text-white font-bold text-center
               text-xs md:text-sm
-              w-full lg:w-auto
+              w-full xs:w-1/2 sm:w-1/3 lg:w-auto
               py-3 lg:py-4
-              px-6 lg:px-8 
+              px-6 lg:px-8
             `}
             text={intl.formatMessage({ id: "try-demo" })}
           />
@@ -60,6 +60,7 @@ const Main = ({ intl }) => {
       <div className="flex-1 bg-white mt-8 lg:mt-0">
         <Img
           className="shadow-2xl"
+          title={intl.formatMessage({ id: "main.title" })}
           fluid={allContentfulAsset.edges[0].node.fluid}
         />
       </div>

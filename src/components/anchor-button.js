@@ -6,8 +6,10 @@ function AnchorButton({
   onClick,
   className,
   link = "#",
-  asButton = true,
   blank = true,
+  asButton = false,
+  arrowClassName = "",
+  arrowStyle,
 }) {
   const Tag = asButton ? "button" : "a"
   const props = asButton
@@ -21,8 +23,12 @@ function AnchorButton({
       }
 
   return (
-    <Tag {...props} className={className}>
-      <span>{text}</span> <ArrowRight className="inline-block ml-3" />
+    <Tag {...props} className={`group ${className}`}>
+      <span>{text}</span>{" "}
+      <ArrowRight
+        style={arrowStyle}
+        className={`transition-transform ease-in duration-200 inline-block ml-3 transform group-hover:translate-x-1 ${arrowClassName}`}
+      />
     </Tag>
   )
 }

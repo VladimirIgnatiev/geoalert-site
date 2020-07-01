@@ -1,7 +1,16 @@
 module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
+    container: {
+      padding: "1rem",
+    },
     extend: {
+      maxWidth: {
+        "product-image": "560px",
+      },
+      screens: {
+        xs: { min: "420px", max: "639px" },
+      },
       colors: {
         primary: "#E73E33",
         "primary-light": "#FF4539",
@@ -40,6 +49,8 @@ module.exports = {
   },
   variants: {
     backgroundColor: ["responsive", "hover", "focus", "active"],
+    borderColor: ["responsive", "hover", "focus"],
+    translate: ["responsive", "hover", "focus", "group-hover"],
   },
   plugins: [],
 }

@@ -54,6 +54,12 @@
   font-family: "Roboto Slab", serif;
 }
 
+@screen xs {
+  .container {
+    max-width: unset !important;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

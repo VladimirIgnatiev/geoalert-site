@@ -5,7 +5,7 @@ import createPersistedState from "use-persisted-state"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import Language from "./language"
-import MainLogo from "../icons/main-logo"
+import MainLogo from "./main-logo"
 import Hamburger from "../icons/hamburger"
 import Cross from "../icons/cross"
 
@@ -37,7 +37,7 @@ const Header = () => {
         isNavExpanded ? "h-screen sticky" : ""
       }`}
     >
-      <div className="container w-full h-full mx-auto p-4 pb-0 flex flex-col justify-between">
+      <div className="container w-full h-full mx-auto pt-4 pb-0 flex flex-col justify-between">
         <nav className="flex items-center justify-between flex-wrap">
           <div className="flex-shrink-0">
             <Link to="/">
