@@ -3,7 +3,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 
 const WhatIs = ({ intl }) => {
   return (
-    <section id="company" className="bg-white mt-12 md:mt-32 ">
+    <section id="company" className="bg-white mt-12 md:mt-32">
       <div className="container mx-auto text-center sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
         <h2 className="title">
           <FormattedMessage id="what-is.title" />
@@ -18,7 +18,7 @@ const WhatIs = ({ intl }) => {
             className="
             h-full
             absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-20
-            sm:max-w-xl md:max-w-2xl lg:max-w-3xl 3xl:max-w-4xl"
+            container sm:max-w-xl md:max-w-2xl lg:max-w-3xl 3xl:max-w-4xl"
           >
             <iframe
               className="shadow-xl"
