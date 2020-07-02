@@ -38,11 +38,10 @@ const Products = ({ intl }) => {
             <p className="mt-5 font-sans text-base lg:text-lg text-gray-900">
               <FormattedMessage id="products.map-flow.description" />
             </p>
-            <div className="flex flex-wrap text-secondary mt-5">
+            <div className="inline-block mt-5 lg:mt-8 xl:mt-10">
               <AnchorButton
                 link="https://demo.geoalert.io"
-                className="inline-block 
-                mt-5 lg:mt-8 xl:mt-10
+                className="
                 transition-colors duration-200
                 bg-primary hover:bg-primary-light shadow
                 uppercase text-white font-bold text-center

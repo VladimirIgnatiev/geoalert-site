@@ -16,13 +16,12 @@ const WhatIs = ({ intl }) => {
         </p>
       </div>
       <div className="relative mt-24 md:mt-32">
-        <div className="bg-tertiary pb-1/2 sm:pb-5/12 md:pb-4/12 lg:pb-4/12">
+        <div className="bg-tertiary pb-1/2 sm:pb-5/12 md:pb-4/12 lg:pb-4/12 xl:pb-128">
           <div
-            className={`
-              h-full
-              absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-20
-              sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-2/3
-            `}
+            className="
+            h-full
+            absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-20
+            sm:max-w-xl md:max-w-2xl lg:max-w-3xl 3xl:max-w-4xl"
           >
             <iframe
               className="shadow-xl"
