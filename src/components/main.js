@@ -20,7 +20,7 @@ const Main = ({ intl }) => {
   `)
   return (
     <section className="container mx-auto bg-white flex flex-col lg:flex-row lg:pb-20">
-      <div className="flex-0 md:flex-1 bg-white">
+      <div className="flex-0 md:flex-1 bg-white flex items-center">
         <div className="max-w-full lg:max-w-md xl:max-w-lg">
           <h1
             className="leading-tight font-bold font-roboto-slab text-gray-900
@@ -30,15 +30,13 @@ const Main = ({ intl }) => {
             <FormattedMessage id="main.title" />
           </h1>
           <p
-            className={`
-              mt-6 md:mt-5 lg:mt-8 xl:mt-10
-              leading-tight text-gray-800 font-sans
-              text-base sm:text-xl xl:text-2xl
-            `}
+            className="mt-6 md:mt-5 lg:mt-8 xl:mt-10
+            font-sans leading-tight text-gray-800
+            text-base sm:text-xl xl:text-2xl"
           >
             <FormattedMessage id="main.description" />
           </p>
-          <div className="inline-block mt-5 lg:mt-8 xl:mt-10">
+          <div className="inline-block mt-5 lg:mt-8 xl:mt-10 w-full xs:w-auto">
             <AnchorButton
               link="https://demo.geoalert.io"
               className="
@@ -46,7 +44,6 @@ const Main = ({ intl }) => {
               bg-primary hover:bg-primary-light shadow
               uppercase text-white font-bold text-center
               text-xs md:text-sm
-              w-full xs:w-1/2 sm:w-1/3 lg:w-auto
               py-3 lg:py-4
               px-6 lg:px-8"
               text={intl.formatMessage({ id: "try-demo" })}

@@ -5,13 +5,10 @@ const WhatIs = ({ intl }) => {
   return (
     <section id="company" className="bg-white mt-12 md:mt-32 ">
       <div className="container mx-auto text-center sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
-        <h2
-          className="font-bold font-roboto-slab text-gray-900
-          text-2xl sm:text-3xl xl:text-4xl"
-        >
+        <h2 className="title">
           <FormattedMessage id="what-is.title" />
         </h2>
-        <p className="text-base sm:text-lg mt-3 text-gray-900">
+        <p className="description mt-3">
           <FormattedMessage id="what-is.description" />
         </p>
       </div>

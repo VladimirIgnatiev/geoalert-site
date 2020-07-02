@@ -26,10 +26,10 @@ const Products = ({ intl }) => {
       <div className="container mx-auto flex justify-between flex-col lg:flex-row">
         <div className="flex-1 flex items-center">
           <div className="max-w-full lg:max-w-md">
-            <h2 className="font-roboto-slab font-bold text-primary text-2xl lg:text-4xl">
+            <h2 className="title text-primary">
               <FormattedMessage id="products.urban-mapping.title" />
             </h2>
-            <p className="mt-5 font-sans text-base lg:text-lg text-gray-900">
+            <p className="description mt-5">
               <FormattedMessage id="products.urban-mapping.description" />
             </p>
             {/* flex-col sm:flex-row sm:items-center justify-between */}

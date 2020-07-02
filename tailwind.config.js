@@ -37,7 +37,7 @@ module.exports = {
         "product-image": "560px",
       },
       screens: {
-        xs: { min: "420px", max: "639px" },
+        xs: "420px",
       },
       colors: {
         primary: "#E73E33",

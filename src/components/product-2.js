@@ -32,13 +32,13 @@ const Products = ({ intl }) => {
         </div>
         <div className="flex-1 flex items-center">
           <div className="ml-0 lg:ml-32 max-w-full lg:max-w-md">
-            <h2 className="font-roboto-slab font-bold text-secondary text-2xl lg:text-4xl">
+            <h2 className="title text-secondary">
               <FormattedMessage id="products.map-flow.title" />
             </h2>
-            <p className="mt-5 font-sans text-base lg:text-lg text-gray-900">
+            <p className="description mt-5">
               <FormattedMessage id="products.map-flow.description" />
             </p>
-            <div className="inline-block mt-5 lg:mt-8 xl:mt-10">
+            <div className="inline-block mt-5 lg:mt-8 xl:mt-10 w-full xs:w-auto">
               <AnchorButton
                 link="https://demo.geoalert.io"
                 className="
@@ -46,7 +46,6 @@ const Products = ({ intl }) => {
                 bg-primary hover:bg-primary-light shadow
                 uppercase text-white font-bold text-center
                 text-xs md:text-sm
-                w-full xs:w-1/2 sm:w-1/3 lg:w-auto
                 py-3 lg:py-4
                 px-6 lg:px-8"
                 text={intl.formatMessage({ id: "try-demo" })}

@@ -51,12 +51,36 @@
 }
 
 .font-roboto-slab {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+/* 
+* Title/Description
+*/
+
+.title {
+  @apply font-bold font-roboto-slab text-gray-900 text-2xl;
+}
+.description {
+  @apply text-base text-gray-900;
+}
+@screen sm {
+  .title {
+    @apply text-3xl;
+  }
+  .description {
+    @apply text-lg;
+  }
+}
+@screen xl {
+  .title {
+    @apply text-4xl;
+  }
 }
 
 @screen xs {
   .container {
-    max-width: unset !important;
+    max-width: unset;
   }
 }
 

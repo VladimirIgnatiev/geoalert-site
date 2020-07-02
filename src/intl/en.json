@@ -27,5 +27,9 @@
       "title": "Map Flow",
       "description": "Get analytics, not pixels. Accelerate your data workflow by our imagery analysis platform"
     }
+  },
+  "partners": {
+    "title": "Our clients and parners",
+    "description": "We have been honored to partner with these clients"
   }
 }

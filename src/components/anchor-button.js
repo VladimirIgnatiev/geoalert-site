@@ -24,7 +24,7 @@ function AnchorButton({
   return (
     <Tag
       {...props}
-      className={`group flex items-center flex-grow-0 ${className}`}
+      className={`group flex items-center justify-center flex-grow-0 ${className}`}
     >
       <span>{text}</span>{" "}
       <ArrowRight
