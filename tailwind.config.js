@@ -51,6 +51,7 @@ module.exports = {
     backgroundColor: ["responsive", "hover", "focus", "active"],
     borderColor: ["responsive", "hover", "focus"],
     translate: ["responsive", "hover", "focus", "group-hover"],
+    textColor: ["responsive", "hover", "focus", "group-hover"],
   },
   plugins: [],
 }

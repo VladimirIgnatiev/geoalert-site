@@ -29,14 +29,17 @@ const Products = ({ intl }) => {
             <h2 className="font-roboto-slab font-bold text-primary text-2xl lg:text-4xl">
               <FormattedMessage id="products.urban-mapping.title" />
             </h2>
-            <p className="mt-5 font-roboto text-base lg:text-lg">
+            <p className="mt-5 font-sans text-base lg:text-lg text-gray-900">
               <FormattedMessage id="products.urban-mapping.description" />
             </p>
             {/* flex-col sm:flex-row sm:items-center justify-between */}
-            <div className="flex flex-wrap sm:items-center justify-between text-secondary mt-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between text-secondary mt-5">
               <AnchorButton
                 link="https://geoalert.github.io/urban-mapping/"
-                className="font-semibold pb-1 border-b-2 border-solid transition duration-200 ease-in border-white hover:border-secondary"
+                className="pb-1 font-semibold 
+                border-b-2 border-solid border-white hover:border-secondary 
+                transition duration-200 ease-in 
+                self-start sm:self-center"
                 arrowClassName="fill-current text-secondary"
                 text={intl.formatMessage({
                   id: "products.urban-mapping.link",
@@ -46,10 +49,18 @@ const Products = ({ intl }) => {
                 href="https://geoalert.github.io/urban-mapping/"
                 target="_blank"
                 rel="noreferrer"
-                className="w-auto xs:w-full mt-5 sm:mt-0"
+                className="group mt-5 sm:mt-0 block self-start sm:self-center"
               >
-                <PdfFile className="inline-block" />
-                <span className="text-primary ml-4 font-semibold">
+                <PdfFile
+                  className="inline-block
+                  fill-current text-primary group-hover:text-primary-light 
+                  transition duration-200 ease-in"
+                />
+                <span
+                  className="ml-4
+                  text-primary font-semibold group-hover:text-primary-light
+                  transition duration-200 ease-in"
+                >
                   <FormattedMessage id="products.urban-mapping.download" />
                 </span>
               </a>

@@ -35,23 +35,21 @@ const Products = ({ intl }) => {
             <h2 className="font-roboto-slab font-bold text-secondary text-2xl lg:text-4xl">
               <FormattedMessage id="products.map-flow.title" />
             </h2>
-            <p className="mt-5 font-roboto text-base lg:text-lg">
+            <p className="mt-5 font-sans text-base lg:text-lg text-gray-900">
               <FormattedMessage id="products.map-flow.description" />
             </p>
             <div className="flex flex-wrap text-secondary mt-5">
               <AnchorButton
                 link="https://demo.geoalert.io"
-                className={`
-                  inline-block 
-                  mt-5 lg:mt-8 xl:mt-10
-                  transition-colors duration-200
-                  bg-primary hover:bg-primary-light shadow
-                  uppercase text-white font-bold text-center
-                  text-xs md:text-sm
-                  w-full xs:w-1/2 sm:w-1/3 lg:w-auto
-                  py-3 lg:py-4
-                  px-6 lg:px-8
-                `}
+                className="inline-block 
+                mt-5 lg:mt-8 xl:mt-10
+                transition-colors duration-200
+                bg-primary hover:bg-primary-light shadow
+                uppercase text-white font-bold text-center
+                text-xs md:text-sm
+                w-full xs:w-1/2 sm:w-1/3 lg:w-auto
+                py-3 lg:py-4
+                px-6 lg:px-8"
                 text={intl.formatMessage({ id: "try-demo" })}
               />
             </div>
