@@ -27,7 +27,7 @@ const WhatIs = ({ intl }) => {
   return (
     <>
       <Modal isOpen={isOpen} handleClose={handleClose}>
-        <div className="relative container px-0 w-64 xs:w-256 shadow-2xl pb-7/12 ">
+        <div className="relative container px-0 w-72 xs:w-256 shadow-2xl pb-7/12 ">
           <iframe
             className="absolute inset-0"
             title={intl.formatMessage({ id: "what-is.title" })}
