@@ -31,5 +31,8 @@
   "partners": {
     "title": "Our clients and parners",
     "description": "We have been honored to partner with these clients"
+  },
+  "blog": {
+    "writtenBy": "Written by"
   }
 }

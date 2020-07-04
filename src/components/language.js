@@ -2,8 +2,8 @@ import React from "react"
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
 
 const languageName = {
-  en: "EN",
-  ru: "RU",
+  "en-US": "EN",
+  "ru-RU": "RU",
 }
 
 const Language = ({ className }) => (
@@ -11,7 +11,7 @@ const Language = ({ className }) => (
     <IntlContextConsumer>
       {({ language }) => {
         const toggleLanguage = () =>
-          language === "en" ? changeLocale("ru") : changeLocale("en")
+          language === "en-US" ? changeLocale("ru-RU") : changeLocale("en-US")
         return (
           <button className={className} key={language} onClick={toggleLanguage}>
             {languageName[language]}

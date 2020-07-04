@@ -36,10 +36,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#E73E33`,
+        theme_color: `#E73E33`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/ga-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -55,8 +55,8 @@ module.exports = {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/src/intl`,
-        languages: [`en`, `ru`],
-        defaultLanguage: `en`,
+        languages: [`en-US`, `ru-RU`],
+        defaultLanguage: `ru-RU`,
         redirect: true,
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
