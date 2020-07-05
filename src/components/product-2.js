@@ -33,10 +33,10 @@ const Products = ({ intl }) => {
         <div className="flex-1 flex items-center">
           <div className="ml-0 lg:ml-32 max-w-full lg:max-w-md">
             <h2 className="title text-secondary">
-              <FormattedMessage id="products.map-flow.title" />
+              <FormattedMessage id="products.mapFlow.title" />
             </h2>
             <p className="description mt-5">
-              <FormattedMessage id="products.map-flow.description" />
+              <FormattedMessage id="products.mapFlow.description" />
             </p>
             <div className="inline-block mt-5 lg:mt-8 xl:mt-10 w-full xs:w-auto">
               <AnchorButton
@@ -48,7 +48,7 @@ const Products = ({ intl }) => {
                 text-xs md:text-sm
                 py-3 lg:py-4
                 px-6 lg:px-8"
-                text={intl.formatMessage({ id: "try-demo" })}
+                text={intl.formatMessage({ id: "tryDemo" })}
               />
             </div>
           </div>

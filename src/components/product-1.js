@@ -27,10 +27,10 @@ const Products = ({ intl }) => {
         <div className="flex-1 flex items-center">
           <div className="max-w-full lg:max-w-md">
             <h2 className="title text-primary">
-              <FormattedMessage id="products.urban-mapping.title" />
+              <FormattedMessage id="products.urbanMapping.title" />
             </h2>
             <p className="description mt-5">
-              <FormattedMessage id="products.urban-mapping.description" />
+              <FormattedMessage id="products.urbanMapping.description" />
             </p>
             {/* flex-col sm:flex-row sm:items-center justify-between */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between text-secondary mt-5">
@@ -42,7 +42,7 @@ const Products = ({ intl }) => {
                 self-start sm:self-center"
                 arrowClassName="fill-current text-secondary"
                 text={intl.formatMessage({
-                  id: "products.urban-mapping.link",
+                  id: "products.urbanMapping.link",
                 })}
               />
               <a
@@ -61,7 +61,7 @@ const Products = ({ intl }) => {
                   text-primary font-semibold group-hover:text-primary-light
                   transition duration-200 ease-in"
                 >
-                  <FormattedMessage id="products.urban-mapping.download" />
+                  <FormattedMessage id="products.urbanMapping.download" />
                 </span>
               </a>
             </div>

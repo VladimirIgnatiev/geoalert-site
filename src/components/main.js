@@ -46,7 +46,7 @@ const Main = ({ intl }) => {
               text-xs md:text-sm
               py-3 lg:py-4
               px-6 lg:px-8"
-              text={intl.formatMessage({ id: "try-demo" })}
+              text={intl.formatMessage({ id: "tryDemo" })}
             />
           </div>
         </div>

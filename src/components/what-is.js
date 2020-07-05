@@ -30,7 +30,7 @@ const WhatIs = ({ intl }) => {
         <div className="relative container px-0 w-72 xs:w-256 shadow-2xl pb-7/12 ">
           <iframe
             className="absolute inset-0"
-            title={intl.formatMessage({ id: "what-is.title" })}
+            title={intl.formatMessage({ id: "whatIs.title" })}
             width="100%"
             height="100%"
             src="https://www.youtube-nocookie.com/embed/HUGEWmJ9Mco??autoplay=0&showinfo=0&controls=0"
@@ -42,10 +42,10 @@ const WhatIs = ({ intl }) => {
       <section id="company" className="bg-white mt-12 md:mt-32">
         <div className="container mx-auto text-center sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
           <h2 className="title">
-            <FormattedMessage id="what-is.title" />
+            <FormattedMessage id="whatIs.title" />
           </h2>
           <p className="description mt-3">
-            <FormattedMessage id="what-is.description" />
+            <FormattedMessage id="whatIs.description" />
           </p>
         </div>
         <div className="relative mt-24 md:mt-32">
@@ -59,7 +59,7 @@ const WhatIs = ({ intl }) => {
               <div className="w-full h-full bg-teal-500 shadow-xl relative flex justify-center items-center">
                 <Img
                   className="absolute inset-0 w-full h-full"
-                  title={intl.formatMessage({ id: "what-is.title" })}
+                  title={intl.formatMessage({ id: "whatIs.title" })}
                   fluid={allContentfulAsset.edges[0].node.fluid}
                 />
                 <button

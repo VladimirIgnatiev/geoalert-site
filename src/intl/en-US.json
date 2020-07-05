@@ -7,23 +7,23 @@
     "blog": "Blog",
     "contacts": "Contacts"
   },
-  "try-demo": "Try demo",
+  "tryDemo": "Try demo",
   "main": {
     "title": "Geoalert Analytics Platform",
     "description": "Stay aware, analyse and make decisions faster - global geoanalytics platform powered by Earth Observation and AI"
   },
-  "what-is": {
+  "whatIs": {
     "title": "What is Geoalert?",
     "description": "We provide AI powered instant analysis of any location in the world on satellite and aerial imagery to free data analysts from the cartographic routine work and to give cartographers powerful imagery analysis tools"
   },
   "products": {
-    "urban-mapping": {
+    "urbanMapping": {
       "title": "Urban Mapping",
       "description": "Access validated and enriched data of infrastructure: building footprints and roads. Get updates on construction progress at certain sites and on overall city development",
       "link": "Found out application  examples",
       "download": "Download"
     },
-    "map-flow": {
+    "mapFlow": {
       "title": "Map Flow",
       "description": "Get analytics, not pixels. Accelerate your data workflow by our imagery analysis platform"
     }
@@ -33,6 +33,8 @@
     "description": "We have been honored to partner with these clients"
   },
   "blog": {
-    "writtenBy": "Written by"
+    "writtenBy": "Written by",
+    "fromOur": "From our",
+    "blog": "blog"
   }
 }

@@ -2,14 +2,20 @@ import React from "react"
 import Img from "gatsby-image"
 import { injectIntl, FormattedDate, FormattedMessage } from "gatsby-plugin-intl"
 
-const BlogPost = ({ image, date, title, writtenBy }) => {
+const BlogPost = ({ image, date, title, writtenBy, postUrl }) => {
+  if (!image) return null
   return (
-    <div className="px-2">
+    <a
+      className="block px-2"
+      href={postUrl.postUrl}
+      target="_blank"
+      rel="noreferrer"
+    >
       <Img
         title={title}
         fluid={image.fluid}
         // style={{ width: "413px", height: "290px" }}
-        className="space-x-1 w-72 lg:w-96"
+        className="space-x-1 w-72 lg:w-96 shadow"
       />
       <p className="text-secondary mt-5">
         <FormattedDate value={date} year="numeric" month="long" day="numeric" />
@@ -24,7 +30,7 @@ const BlogPost = ({ image, date, title, writtenBy }) => {
           {writtenBy.join(", ")}
         </span>
       </p>
-    </div>
+    </a>
   )
 }
 

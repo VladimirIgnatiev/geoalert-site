@@ -13,7 +13,6 @@ import Blog from "../components/blog"
 
 const IndexPage = ({ intl, data }) => (
   <Layout>
-    {console.log(data)}
     <SEO title={intl.formatMessage({ id: "title" })} />
     <Main />
     <WhatIs />
@@ -39,6 +38,9 @@ export const query = graphql`
             fluid(maxWidth: 413) {
               ...GatsbyContentfulFluid
             }
+          }
+          postUrl {
+            postUrl
           }
         }
       }
