@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 import Play from "../icons/play"
-import Modal from "./modal"
+import Modal from "../components/modal"
 
 const WhatIs = ({ intl }) => {
   const { allContentfulAsset } = useStaticQuery(graphql`

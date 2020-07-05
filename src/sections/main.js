@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import AnchorButton from "./anchor-button"
+import AnchorButton from "../components/anchor-button"
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 
 const Main = ({ intl }) => {

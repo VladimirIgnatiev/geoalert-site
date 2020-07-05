@@ -1,5 +1,5 @@
 import React from "react"
-import BlogPost from "./blog-post"
+import BlogPost from "../components/blog-post"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 const Blog = ({ data }) => {

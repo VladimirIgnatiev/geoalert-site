@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
-import AnchorButton from "./anchor-button"
+import AnchorButton from "../components/anchor-button"
 
 const Products = ({ intl }) => {
   const { allContentfulAsset } = useStaticQuery(graphql`

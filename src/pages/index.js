@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 import { injectIntl } from "gatsby-plugin-intl"
 
 import Layout from "../components/layout"
-import Main from "../components/main"
 import SEO from "../components/seo"
-import WhatIs from "../components/what-is"
-import Product1 from "../components/product-1"
-import Product2 from "../components/product-2"
-import Partners from "../components/partners"
-import Blog from "../components/blog"
+import Main from "../sections/main"
+import WhatIs from "../sections/what-is"
+import Product1 from "../sections/product-1"
+import Product2 from "../sections/product-2"
+import Partners from "../sections/partners"
+import Blog from "../sections/blog"
 
 const IndexPage = ({ intl, data }) => (
   <Layout>
