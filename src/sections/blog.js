@@ -3,6 +3,8 @@ import classnames from "classnames"
 import BlogPost from "../components/blog-post"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import { useScrollableContainer } from "../utils/use-scrollable-container"
+import LongArrowLeft from "../icons/long-arrow-left"
+import LongArrowRight from "../icons/long-arrow-right"
 
 const Blog = ({ data }) => {
   const containerRef = React.useRef()
@@ -33,23 +35,19 @@ const Blog = ({ data }) => {
             "sm:hidden": !hasOverflow,
           })}
         >
-          <button
-            className={classnames(
-              "transform scale-125 origin-center text-gray-500 px-3",
-              { "text-gray-800 hover:text-secondary": canScrollLeft }
-            )}
-            onClick={() => scroll("-300")}
-          >
-            &#8592;
+          <button className="py-3 px-2 group" onClick={() => scroll("-300")}>
+            <LongArrowLeft
+              className={classnames("fill-current text-gray-500", {
+                "text-gray-700 group-hover:text-secondary": canScrollLeft,
+              })}
+            />
           </button>
-          <button
-            className={classnames(
-              "transform scale-125 origin-center text-gray-500 px-3",
-              { "text-gray-800 hover:text-secondary": canScrollRight }
-            )}
-            onClick={() => scroll("300")}
-          >
-            &#8594;
+          <button className="py-3 px-2 group" onClick={() => scroll("300")}>
+            <LongArrowRight
+              className={classnames("fill-current text-gray-500", {
+                "text-gray-700 group-hover:text-secondary": canScrollRight,
+              })}
+            />
           </button>
         </div>
       </div>
@@ -57,16 +55,16 @@ const Blog = ({ data }) => {
         <button
           className={classnames(
             `round-button absolute left-0 z-10
-            transform -translate-x-2 -translate-y-1/2 scale-125 origin-center 
+            transform -translate-x-2 -translate-y-20
             active:outline-none focus:outline-none active:bg-white
             transition-all duration-200 ease-in-out
             sm:invisible sm:opacity-0`,
             { "invisible opacity-0": !hasOverflow || !canScrollLeft }
           )}
-          onClick={() => scroll("-300")}
+          onMouseUp={() => scroll("-300")}
           onTouchEnd={() => scroll("-300")}
         >
-          &#8592;
+          <LongArrowLeft />
         </button>
         <div ref={containerRef} className="flex -mx-2 overflow-hidden">
           {data.allContentfulBlogpost.edges.map(({ node }, index) => (
@@ -76,16 +74,16 @@ const Blog = ({ data }) => {
         <button
           className={classnames(
             `round-button absolute right-0 z-10
-            transform translate-x-2 -translate-y-1/2 scale-125 origin-center 
+            transform translate-x-2 -translate-y-20
             active:outline-none focus:outline-none
             transition-all duration-200 ease-in-out
             sm:invisible sm:opacity-0`,
             { "invisible opacity-0": !hasOverflow || !canScrollRight }
           )}
-          onClick={() => scroll("300")}
+          onMouseUp={() => scroll("300")}
           onTouchEnd={() => scroll("300")}
         >
-          &#8594;
+          <LongArrowRight />
         </button>
       </div>
     </section>
