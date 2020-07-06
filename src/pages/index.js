@@ -26,8 +26,8 @@ const IndexPage = ({ intl, data }) => (
 export default injectIntl(IndexPage)
 
 export const query = graphql`
-  query blogPosts($language: String!) {
-    allContentfulBlogpost(filter: { node_locale: { eq: $language } }) {
+  query blogPosts {
+    allContentfulBlogpost {
       edges {
         node {
           node_locale
