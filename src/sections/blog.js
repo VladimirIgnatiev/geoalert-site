@@ -62,7 +62,6 @@ const Blog = ({ data }) => {
             { "invisible opacity-0": !hasOverflow || !canScrollLeft }
           )}
           onMouseUp={() => scroll("-300")}
-          onTouchEnd={() => scroll("-300")}
         >
           <LongArrowLeft />
         </button>
@@ -81,7 +80,6 @@ const Blog = ({ data }) => {
             { "invisible opacity-0": !hasOverflow || !canScrollRight }
           )}
           onMouseUp={() => scroll("300")}
-          onTouchEnd={() => scroll("300")}
         >
           <LongArrowRight />
         </button>
