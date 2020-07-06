@@ -3,7 +3,6 @@ import Img from "gatsby-image"
 import { injectIntl, FormattedDate, FormattedMessage } from "gatsby-plugin-intl"
 
 const BlogPost = ({ image, date, title, writtenBy, postUrl }) => {
-  if (!image) return null
   return (
     <a
       className="block px-2"
