@@ -56,21 +56,15 @@ const Blog = ({ data }) => {
       <div className="mt-8 relative">
         <button
           className={classnames(
-            "group absolute left-0 inset-y-0 z-10 w-10 transform -translate-x-4 bg-gray-200 bg-opacity-50 flex items-center justify-center outline-none active:outline-none focus:outline-none block sm:hidden",
+            `round-button absolute left-0 z-10
+            transform -translate-x-2 -translate-y-1/2 scale-125 origin-center 
+            active:outline-none focus:outline-none
+            block sm:hidden`,
             { hidden: !hasOverflow || !canScrollLeft }
           )}
           onClick={() => scroll("-300")}
         >
-          <span
-            className="text-gray-800 hover:text-secondary
-              transform scale-125 origin-center
-              w-8 h-8 rounded-full bg-white border-2
-              border-gray-900 border-opacity-25
-              group-hover:border-secondary
-              flex items-center justify-center"
-          >
-            &#8592;
-          </span>
+          &#8592;
         </button>
         <div ref={containerRef} className="flex -mx-2 overflow-hidden">
           {data.allContentfulBlogpost.edges.map(({ node }, index) => (
@@ -79,21 +73,15 @@ const Blog = ({ data }) => {
         </div>
         <button
           className={classnames(
-            "group absolute right-0 inset-y-0 z-10 w-10 transform translate-x-4 bg-gray-200 bg-opacity-50 flex items-center justify-center outline-none active:outline-none focus:outline-none block sm:hidden",
+            `round-button absolute right-0 z-10
+            transform translate-x-2 -translate-y-1/2 scale-125 origin-center 
+            active:outline-none focus:outline-none
+            block sm:hidden`,
             { hidden: !hasOverflow || !canScrollRight }
           )}
           onClick={() => scroll("300")}
         >
-          <span
-            className="text-gray-800
-              transform scale-125 origin-center
-              w-8 h-8 rounded-full bg-white border-2 
-              border-gray-500
-              group-hover:border-gray-700
-              flex items-center justify-center"
-          >
-            &#8594;
-          </span>
+          &#8594;
         </button>
       </div>
     </section>
