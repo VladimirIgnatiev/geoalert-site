@@ -95,7 +95,7 @@
 
   @apply bg-gray-200 bg-opacity-50;
   @apply flex items-center justify-center;
-
+  @apply select-none;
   @apply text-gray-800;
   @apply rounded-full bg-white shadow-xl;
 }

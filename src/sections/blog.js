@@ -58,9 +58,10 @@ const Blog = ({ data }) => {
           className={classnames(
             `round-button absolute left-0 z-10
             transform -translate-x-2 -translate-y-1/2 scale-125 origin-center 
-            active:outline-none focus:outline-none
-            block sm:hidden`,
-            { hidden: !hasOverflow || !canScrollLeft }
+            active:outline-none focus:outline-none active:bg-white
+            transition-all duration-200 ease-in-out
+            sm:invisible sm:opacity-0`,
+            { "invisible opacity-0": !hasOverflow || !canScrollLeft }
           )}
           onClick={() => scroll("-300")}
         >
@@ -76,8 +77,9 @@ const Blog = ({ data }) => {
             `round-button absolute right-0 z-10
             transform translate-x-2 -translate-y-1/2 scale-125 origin-center 
             active:outline-none focus:outline-none
-            block sm:hidden`,
-            { hidden: !hasOverflow || !canScrollRight }
+            transition-all duration-200 ease-in-out
+            sm:invisible sm:opacity-0`,
+            { "invisible opacity-0": !hasOverflow || !canScrollRight }
           )}
           onClick={() => scroll("300")}
         >
