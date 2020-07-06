@@ -57,7 +57,7 @@ module.exports = {
         path: `${__dirname}/src/intl`,
         languages: [`en-US`, `ru-RU`],
         defaultLanguage: `ru-RU`,
-        redirect: true,
+        redirect: false,
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },

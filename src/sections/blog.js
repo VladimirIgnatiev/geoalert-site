@@ -64,6 +64,7 @@ const Blog = ({ data }) => {
             { "invisible opacity-0": !hasOverflow || !canScrollLeft }
           )}
           onClick={() => scroll("-300")}
+          onTouchEnd={() => scroll("-300")}
         >
           &#8592;
         </button>
@@ -82,6 +83,7 @@ const Blog = ({ data }) => {
             { "invisible opacity-0": !hasOverflow || !canScrollRight }
           )}
           onClick={() => scroll("300")}
+          onTouchEnd={() => scroll("300")}
         >
           &#8594;
         </button>
