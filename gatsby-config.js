@@ -61,5 +61,11 @@ module.exports = {
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },
+    {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: `https://gmail.us10.list-manage.com/subscribe/post?u=ac69b766f280087d9b8d0d8db&amp;id=4b57273fd6`,
+      },
+    },
   ],
 }

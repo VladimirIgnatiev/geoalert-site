@@ -36,5 +36,13 @@
     "writtenBy": "Written by",
     "fromOur": "From our",
     "blog": "blog"
+  },
+  "subscribe": {
+    "title": "Sign up for email updates",
+    "description": "No spam, only interesting news",
+    "inputPlaceholder": "Your Email",
+    "submitButton": "Sign up",
+    "onSubscribing": "Subscribing...",
+    "onSubscribeSuccess": "Thanks!"
   }
 }

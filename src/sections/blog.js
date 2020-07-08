@@ -35,14 +35,20 @@ const Blog = ({ data }) => {
             "sm:hidden": !hasOverflow,
           })}
         >
-          <button className="py-3 px-2 group" onClick={() => scroll("-300")}>
+          <button
+            className="py-3 px-2 group rounded-sm outline-primary"
+            onClick={() => scroll("-300")}
+          >
             <LongArrowLeft
               className={classnames("fill-current text-gray-500", {
                 "text-gray-700 group-hover:text-secondary": canScrollLeft,
               })}
             />
           </button>
-          <button className="py-3 px-2 group" onClick={() => scroll("300")}>
+          <button
+            className="py-3 px-2 group rounded-sm outline-primary"
+            onClick={() => scroll("300")}
+          >
             <LongArrowRight
               className={classnames("fill-current text-gray-500", {
                 "text-gray-700 group-hover:text-secondary": canScrollRight,

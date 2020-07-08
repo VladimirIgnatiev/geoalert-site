@@ -39,13 +39,7 @@ const Main = ({ intl }) => {
           <div className="inline-block mt-5 lg:mt-8 xl:mt-10 w-full xs:w-auto">
             <AnchorButton
               link="https://demo.geoalert.io"
-              className="
-              transition-colors duration-200
-              bg-primary hover:bg-primary-light shadow
-              uppercase text-white font-bold text-center
-              text-xs md:text-sm
-              py-3 lg:py-4
-              px-6 lg:px-8"
+              className="try-button try-button-flex"
               text={intl.formatMessage({ id: "tryDemo" })}
             />
           </div>

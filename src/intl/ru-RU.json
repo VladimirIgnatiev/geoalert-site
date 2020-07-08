@@ -36,5 +36,13 @@
     "writtenBy": "Авторы",
     "fromOur": "Из нашего",
     "blog": "блога"
+  },
+  "subscribe": {
+    "title": "Подписка на обновления",
+    "description": "Никакого спама! Только интересные новости",
+    "inputPlaceholder": "Ваша почта",
+    "submitButton": "Подписаться",
+    "onSubscribing": "Добавляем...",
+    "onSubscribeSuccess": "Спасибо!"
   }
 }

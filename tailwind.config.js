@@ -33,6 +33,9 @@ module.exports = {
       padding: "1rem",
     },
     extend: {
+      boxShadow: {
+        outline: "0 0 0 3px rgba(231, 62, 51, 0.5)",
+      },
       maxWidth: {
         "product-image": "560px",
       },
