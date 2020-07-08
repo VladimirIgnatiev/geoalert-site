@@ -19,7 +19,7 @@ const Main = ({ intl }) => {
     }
   `)
   return (
-    <section className="container mx-auto bg-white flex flex-col lg:flex-row lg:pb-20">
+    <section className="container mx-auto bg-white flex flex-col lg:flex-row ">
       <div className="flex-0 md:flex-1 bg-white flex items-center">
         <div className="max-w-full lg:max-w-md xl:max-w-lg">
           <h1

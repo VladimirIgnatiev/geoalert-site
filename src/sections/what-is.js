@@ -39,7 +39,7 @@ const WhatIs = ({ intl }) => {
           ></iframe>
         </div>
       </Modal>
-      <section id="company" className="bg-white mt-12 md:mt-32">
+      <section id="company" className="bg-white mt-12 md:mt-32 md:pt-5">
         <div className="container mx-auto text-center sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
           <h2 className="title">
             <FormattedMessage id="whatIs.title" />
