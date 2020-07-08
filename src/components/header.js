@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header
       className={`w-full absolute top-0 z-10 bg-white ${
-        isNavExpanded ? "h-screen sticky" : ""
+        isNavExpanded ? "h-screen" : ""
       }`}
     >
       <div className="container w-full h-full mx-auto pt-4 pb-0 flex flex-col justify-between">
