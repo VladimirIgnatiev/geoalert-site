@@ -11,6 +11,7 @@ import Product2 from "../sections/product-2"
 import Partners from "../sections/partners"
 import Blog from "../sections/blog"
 import Subscribe from "../sections/subscribe"
+import Contacts from "../sections/contacts"
 
 const IndexPage = ({ intl, data }) => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = ({ intl, data }) => (
     <Partners />
     <Blog data={data} />
     <Subscribe />
+    <Contacts />
   </Layout>
 )
 

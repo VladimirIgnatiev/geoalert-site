@@ -141,4 +141,81 @@
   @apply outline-none shadow-outline;
 }
 
+.contacts-block {
+  @apply border-2 border-primary;
+  @apply text-sm text-secondary font-semibold whitespace-no-wrap leading-relaxed;
+  @apply p-5 rounded-sm;
+  backdrop-filter: blur(3px);
+  position: absolute;
+  width: 280px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: 0 auto;
+}
+
+@screen lg {
+  .contacts-block {
+    @apply text-base p-6 leading-loose;
+    @apply inset-0 m-auto;
+    width: 342px;
+    height: 210px;
+    transform: translateX(150px);
+  }
+}
+
+/* Location point */
+
+.point-container {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.circle {
+  width: 42px;
+  height: 42px;
+  background: rgba(231, 62, 51, 0.5);
+  position: relative;
+  border-radius: 50%;
+}
+.circle::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 18px #e73e33;
+  animation: waves 1.5s ease infinite;
+}
+.circle .core {
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  background: #e73e33;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+@keyframes waves {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
 @tailwind utilities;

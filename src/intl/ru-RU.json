@@ -44,5 +44,12 @@
     "submitButton": "Подписаться",
     "onSubscribing": "Добавляем...",
     "onSubscribeSuccess": "Спасибо!"
+  },
+  "contacts": {
+    "name": "ООО ГЕОАЛЕРТ",
+    "location1": "Россия, Москва",
+    "location2": "Ивационный Центр Сколково",
+    "phone": "Skype / Телефон: +7 (800) 201 28 19",
+    "email": "hello@geoalert.io"
   }
 }

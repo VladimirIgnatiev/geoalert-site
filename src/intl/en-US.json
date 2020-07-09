@@ -44,5 +44,12 @@
     "submitButton": "Sign up",
     "onSubscribing": "Subscribing...",
     "onSubscribeSuccess": "Thanks!"
+  },
+  "contacts": {
+    "name": "Geoalert LLC",
+    "location1": "Russia, Moscow",
+    "location2": "Skolkovo Innovation Center",
+    "phone": "Skype / Phone: +7 (800) 201 28 19",
+    "email": "hello@geoalert.io"
   }
 }

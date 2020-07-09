@@ -64,7 +64,7 @@ const WhatIs = ({ intl }) => {
                 />
                 <button
                   onClick={handleOpen}
-                  className="absolute px-10 py-6 bg-primary hover:bg-primary-light rounded-sm"
+                  className="absolute try-button px-10 py-6"
                 >
                   <Play />
                 </button>
