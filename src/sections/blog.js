@@ -36,7 +36,7 @@ const Blog = ({ data }) => {
           })}
         >
           <button
-            name="scroll-right"
+            aria-label="scroll-right"
             className="py-3 px-2 group rounded-sm outline-primary"
             onClick={() => scroll("-300")}
           >
@@ -47,7 +47,7 @@ const Blog = ({ data }) => {
             />
           </button>
           <button
-            name="scroll-left"
+            aria-label="scroll-left"
             className="py-3 px-2 group rounded-sm outline-primary"
             onClick={() => scroll("300")}
           >
@@ -61,7 +61,7 @@ const Blog = ({ data }) => {
       </div>
       <div className="mt-8 relative">
         <button
-          name="scroll-right"
+          aria-label="scroll-right"
           className={classnames(
             "round-button outline-primary left-0 -translate-x-2",
             {
@@ -81,7 +81,7 @@ const Blog = ({ data }) => {
           ))}
         </div>
         <button
-          name="scroll-left"
+          aria-label="scroll-left"
           className={classnames(
             "round-button outline-primary  right-0 translate-x-2",
             { "round-button-invisible": !hasOverflow || !canScrollRight }

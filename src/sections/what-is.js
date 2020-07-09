@@ -63,7 +63,7 @@ const WhatIs = ({ intl }) => {
                   fluid={allContentfulAsset.edges[0].node.fluid}
                 />
                 <button
-                  name="play-video"
+                  aria-label="play-video"
                   onClick={handleOpen}
                   className="absolute try-button px-10 py-6"
                 >

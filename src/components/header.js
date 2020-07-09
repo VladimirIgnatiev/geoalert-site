@@ -40,13 +40,13 @@ const Header = () => {
       <div className="container w-full h-full mx-auto pt-4 pb-0 flex flex-col justify-between">
         <nav className="flex items-center justify-between flex-wrap">
           <div className="flex-shrink-0">
-            <Link to="/">
+            <Link to="/" aria-label="go home">
               <MainLogo />
             </Link>
           </div>
           <div className="block lg:hidden">
             <button
-              name="hamburger-menu"
+              aria-label="show-nav-menu"
               className="flex items-center p-2 rounded"
               onClick={toggleNav}
             >

@@ -58,7 +58,7 @@ const Subscribe = ({ intl }) => {
           onSubmit={handleSubmit}
         >
           <label htmlFor="email" className="w-full">
-            <span className="invisible">Email</span>
+            <span className="hidden">Email</span>
             <input
               className={classnames(
                 "w-full lg:w-104 px-4 py-3 rounded-sm outline-primary",
