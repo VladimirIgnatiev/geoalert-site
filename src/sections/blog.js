@@ -60,12 +60,10 @@ const Blog = ({ data }) => {
       <div className="mt-8 relative">
         <button
           className={classnames(
-            `round-button absolute left-0 z-10
-            transform -translate-x-2 -translate-y-20
-            active:outline-none focus:outline-none active:bg-white
-            transition-all duration-200 ease-in-out
-            sm:invisible sm:opacity-0`,
-            { "invisible opacity-0": !hasOverflow || !canScrollLeft }
+            "round-button outline-primary left-0 -translate-x-2",
+            {
+              "round-button-invisible": !hasOverflow || !canScrollLeft,
+            }
           )}
           onMouseUp={() => scroll("-300")}
         >
@@ -81,12 +79,8 @@ const Blog = ({ data }) => {
         </div>
         <button
           className={classnames(
-            `round-button absolute right-0 z-10
-            transform translate-x-2 -translate-y-20
-            active:outline-none focus:outline-none
-            transition-all duration-200 ease-in-out
-            sm:invisible sm:opacity-0`,
-            { "invisible opacity-0": !hasOverflow || !canScrollRight }
+            "round-button outline-primary  right-0 translate-x-2",
+            { "round-button-invisible": !hasOverflow || !canScrollRight }
           )}
           onMouseUp={() => scroll("300")}
         >

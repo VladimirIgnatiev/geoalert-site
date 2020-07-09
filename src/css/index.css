@@ -89,6 +89,12 @@
   }
 }
 
+/* Outline */
+
+.outline-primary:focus {
+  @apply outline-none shadow-outline;
+}
+
 /*
 * Buttons
 */
@@ -99,11 +105,25 @@
   width: 45px;
   height: 45px;
 
+  @apply absolute z-10;
+  @apply transform -translate-y-20;
+  @apply transition-all duration-200 ease-in-out;
+
   @apply bg-gray-200 bg-opacity-50;
   @apply flex items-center justify-center;
   @apply select-none;
   @apply text-gray-800;
   @apply rounded-full bg-white shadow-xl;
+}
+
+.round-button-invisible {
+  @apply invisible opacity-0;
+}
+
+@screen sm {
+  .round-button {
+    @apply invisible opacity-0;
+  }
 }
 
 /* Try demo */
@@ -135,10 +155,6 @@
   .try-button {
     @apply px-8 py-4;
   }
-}
-
-.outline-primary:focus {
-  @apply outline-none shadow-outline;
 }
 
 .contacts-block {
