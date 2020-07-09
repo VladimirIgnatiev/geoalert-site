@@ -9,6 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main className="mt-20 lg:mt-32 lg:pt-5">{children}</main>
-      <footer></footer>
+      <Footer />
     </>
   )
 }
