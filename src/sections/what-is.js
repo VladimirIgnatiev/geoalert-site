@@ -53,7 +53,7 @@ const WhatIs = ({ intl }) => {
             <div
               className="
             h-full
-            absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-20
+            absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-24
             container sm:max-w-xl md:max-w-2xl lg:max-w-3xl 3xl:max-w-4xl"
             >
               <div className="w-full h-full bg-teal-500 shadow-xl relative flex justify-center items-center">

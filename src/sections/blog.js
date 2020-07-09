@@ -18,7 +18,7 @@ const Blog = ({ data }) => {
   return (
     <section
       id="blog"
-      className="container mx-auto my-12 lg:mt-24 overflow-hidden"
+      className="container mx-auto my-12 lg:mt-24 lg:mb-18 lg:pb-4 overflow-hidden"
     >
       <div className="flex flex-row justify-between items-center">
         <h2 className="title">

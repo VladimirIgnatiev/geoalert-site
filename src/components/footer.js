@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="mt-8 sm:mt-0 sm:order-1 grid grid-rows-1 grid-cols-4 col-gap-2">
           <a
             className="w-8 h-8 flex items-center justify-center"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://twitter.com/geoalert"
           >
@@ -22,7 +22,7 @@ const Footer = () => {
           </a>
           <a
             className="w-8 h-8 flex items-center justify-center"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://www.facebook.com/GeoAlertLtd/"
           >
@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
           <a
             className="w-8 h-8 flex items-center justify-center"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://github.com/Geoalert"
           >
@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
           <a
             className="w-8 h-8 flex items-center justify-center"
-            rel="noopener"
+            rel="noreferrer"
             target="_blank"
             href="https://medium.com/@geoalert"
           >

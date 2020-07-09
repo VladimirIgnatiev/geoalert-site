@@ -25,7 +25,7 @@ const Products = ({ intl }) => {
     <section id="products" className="mt-12 lg:mt-24">
       <div className="container mx-auto flex justify-between flex-col lg:flex-row">
         <div className="flex-1 flex items-center">
-          <div className="max-w-full lg:max-w-md">
+          <div className="max-w-full lg:max-w-lg">
             <h2 className="title text-primary">
               <FormattedMessage id="products.urbanMapping.title" />
             </h2>

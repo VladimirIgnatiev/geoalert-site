@@ -7,7 +7,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 const Main = ({ intl }) => {
   const { allContentfulAsset } = useStaticQuery(graphql`
     {
-      allContentfulAsset(filter: { title: { eq: "ga-site/main-image" } }) {
+      allContentfulAsset(filter: { title: { eq: "ga-site:main-image-2x" } }) {
         edges {
           node {
             fluid {
@@ -30,8 +30,8 @@ const Main = ({ intl }) => {
             <FormattedMessage id="main.title" />
           </h1>
           <p
-            className="mt-6 md:mt-5 lg:mt-8 xl:mt-10
-            font-sans leading-tight text-gray-800
+            className="mt-6 md:mt-5 lg:mt-8 xl:mt-10 lg:pr-8
+            font-sans leading-snug text-gray-800
             text-base sm:text-xl xl:text-2xl"
           >
             <FormattedMessage id="main.description" />
