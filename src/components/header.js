@@ -46,6 +46,7 @@ const Header = () => {
           </div>
           <div className="block lg:hidden">
             <button
+              name="hamburger-menu"
               className="flex items-center p-2 rounded"
               onClick={toggleNav}
             >

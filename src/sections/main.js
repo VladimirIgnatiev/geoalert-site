@@ -7,11 +7,11 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 const Main = ({ intl }) => {
   const { allContentfulAsset } = useStaticQuery(graphql`
     {
-      allContentfulAsset(filter: { title: { eq: "ga-site:main-image-2x" } }) {
+      allContentfulAsset(filter: { title: { eq: "ga-site/main-image" } }) {
         edges {
           node {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

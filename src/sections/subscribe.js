@@ -57,21 +57,24 @@ const Subscribe = ({ intl }) => {
           mt-6 lg:mt-0"
           onSubmit={handleSubmit}
         >
-          <input
-            className={classnames(
-              "w-full lg:w-104 px-4 py-3 rounded-sm outline-primary",
-              { "cursor-not-allowed": disableControls }
-            )}
-            id="email"
-            name="email"
-            type="email"
-            value={email}
-            onChange={handleEmailChange}
-            placeholder={intl.formatMessage({
-              id: "subscribe.inputPlaceholder",
-            })}
-            disabled={disableControls}
-          />
+          <label htmlFor="email" className="w-full">
+            <span className="invisible">Email</span>
+            <input
+              className={classnames(
+                "w-full lg:w-104 px-4 py-3 rounded-sm outline-primary",
+                { "cursor-not-allowed": disableControls }
+              )}
+              id="email"
+              name="email"
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder={intl.formatMessage({
+                id: "subscribe.inputPlaceholder",
+              })}
+              disabled={disableControls}
+            />
+          </label>
           <AnchorButton
             asButton
             type="submit"
