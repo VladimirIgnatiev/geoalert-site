@@ -71,7 +71,10 @@ const Blog = ({ data }) => {
         >
           <LongArrowLeft />
         </button>
-        <div ref={containerRef} className="flex -mx-2 overflow-hidden">
+        <div
+          ref={containerRef}
+          className="flex -mx-2 overflow-x-scroll sm:overflow-hidden"
+        >
           {data.allContentfulBlogpost.edges.map(({ node }, index) => (
             <BlogPost key={index} {...node} />
           ))}
