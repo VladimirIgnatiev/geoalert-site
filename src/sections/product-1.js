@@ -5,22 +5,37 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 import AnchorButton from "../components/anchor-button"
 import PdfFile from "../icons/pdf-file"
 
-const Products = ({ intl }) => {
-  const { allContentfulAsset } = useStaticQuery(graphql`
+const Products = ({ intl, ...props }) => {
+  const data = useStaticQuery(graphql`
     {
-      allContentfulAsset(
+      productImage: allContentfulAsset(
         filter: { title: { eq: "ga-site/urban-mapping-product" } }
       ) {
         edges {
           node {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
+            }
+          }
+        }
+      }
+      pdfLinks: allContentfulAsset(
+        filter: {
+          title: { in: ["ga-site:um-brochure-ru", "ga-site:um-brochure-en"] }
+        }
+      ) {
+        edges {
+          node {
+            description
+            file {
+              url
             }
           }
         }
       }
     }
   `)
+
   return (
     <section id="products" className="mt-12 lg:mt-24">
       <div className="container mx-auto flex justify-between flex-col lg:flex-row">
@@ -71,7 +86,7 @@ const Products = ({ intl }) => {
           <Img
             className="shadow-2xl xl:max-w-product-image ml-auto"
             title={intl.formatMessage({ id: "main.title" })}
-            fluid={allContentfulAsset.edges[0].node.fluid}
+            fluid={data.productImage.edges[0].node.fluid}
           />
         </div>
       </div>

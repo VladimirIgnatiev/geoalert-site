@@ -14,7 +14,7 @@ const WhatIs = ({ intl }) => {
         edges {
           node {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

@@ -40,7 +40,7 @@ export const query = graphql`
           writtenBy
           image {
             fluid(maxWidth: 413) {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
           postUrl {

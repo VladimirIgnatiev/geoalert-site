@@ -10,7 +10,7 @@ const Contacts = () => {
         edges {
           node {
             fluid {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }
