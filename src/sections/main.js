@@ -10,7 +10,7 @@ const Main = ({ intl }) => {
       allContentfulAsset(filter: { title: { eq: "ga-site/main-image" } }) {
         edges {
           node {
-            fluid(quality: 100) {
+            fluid {
               ...GatsbyContentfulFluid_withWebp
             }
           }
@@ -23,7 +23,7 @@ const Main = ({ intl }) => {
       <div className="flex-0 md:flex-1 bg-white flex items-center">
         <div className="max-w-full lg:max-w-md xl:max-w-lg">
           <h1
-            className="leading-tight font-bold font-roboto-slab text-gray-900
+            className="leading-tight font-bold font-roboto-slab text-black
             mt-8 md:mt-6 lg:mt-10 xl:mt-12
             text-3xl sm:text-4xl xl:text-5xl"
           >

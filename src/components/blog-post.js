@@ -19,7 +19,7 @@ const BlogPost = ({ image, date, title, writtenBy, postUrl }) => {
       <p className="text-secondary mt-5">
         <FormattedDate value={date} year="numeric" month="long" day="numeric" />
       </p>
-      <h3 className="mt-2 title text-lg text-gray-900 group-hover:text-secondary transition-colors duration-100 ease-in">
+      <h3 className="mt-2 title text-lg text-black group-hover:text-secondary transition-colors duration-100 ease-in">
         {title}
       </h3>
       <p className="mt-2">

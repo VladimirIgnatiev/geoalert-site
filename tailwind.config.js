@@ -47,6 +47,7 @@ module.exports = {
         "primary-light": "#FF4539",
         secondary: "#0D1253",
         tertiary: "#F3F3F3",
+        black: "#292929",
       },
       spacing: {
         ...scales,

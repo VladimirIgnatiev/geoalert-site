@@ -19,7 +19,7 @@ const Footer = () => {
             target="_blank"
             href="https://twitter.com/geoalert"
           >
-            <Twitter className="text-gray-900 fill-current hover:text-secondary" />
+            <Twitter className="text-black fill-current hover:text-secondary" />
           </a>
           <a
             title="facebook"
@@ -28,7 +28,7 @@ const Footer = () => {
             target="_blank"
             href="https://www.facebook.com/GeoAlertLtd/"
           >
-            <Facebook className="text-gray-900 fill-current hover:text-secondary" />
+            <Facebook className="text-black fill-current hover:text-secondary" />
           </a>
           <a
             title="github"
@@ -37,7 +37,7 @@ const Footer = () => {
             target="_blank"
             href="https://github.com/Geoalert"
           >
-            <Github className="text-gray-900 fill-current hover:text-secondary" />
+            <Github className="text-black fill-current hover:text-secondary" />
           </a>
           <a
             title="medium"
@@ -46,10 +46,10 @@ const Footer = () => {
             target="_blank"
             href="https://medium.com/@geoalert"
           >
-            <Medium className="text-gray-900 fill-current hover:text-secondary" />
+            <Medium className="text-black fill-current hover:text-secondary" />
           </a>
         </div>
-        <p className="text-gray-900 mt-8 sm:mt-0">
+        <p className="text-black mt-8 sm:mt-0">
           Copyright © geoalert.io 2019-2020
         </p>
       </div>

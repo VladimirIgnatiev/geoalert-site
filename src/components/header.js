@@ -82,9 +82,9 @@ const Header = () => {
                   </div>
                 </li>
               ))}
-              <div className="navbar-item mr-0">
-                <Language />
-              </div>
+              <li className="navbar-item mr-0">
+                <Language onToggle={() => isNavExpanded && collapseNav()} />
+              </li>
             </ul>
           </div>
         </nav>

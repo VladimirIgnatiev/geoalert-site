@@ -6,12 +6,14 @@ const languageName = {
   "ru-RU": "RU",
 }
 
-const Language = ({ className }) => (
+const Language = ({ className, onToggle }) => (
   <div>
     <IntlContextConsumer>
       {({ language }) => {
-        const toggleLanguage = () =>
+        const toggleLanguage = () => {
+          onToggle()
           language === "en-US" ? changeLocale("ru-RU") : changeLocale("en-US")
+        }
         return (
           <button className={className} key={language} onClick={toggleLanguage}>
             {languageName[language]}

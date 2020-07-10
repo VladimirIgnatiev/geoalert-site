@@ -12,7 +12,7 @@
 }
 
 .navbar-item {
-  @apply .text-gray-900 .mx-0 .font-sans .h-16 .flex .items-center;
+  @apply .text-black .mx-0 .font-sans .h-16 .flex .items-center;
 }
 
 @screen lg {
@@ -70,10 +70,10 @@
 */
 
 .title {
-  @apply font-bold font-roboto-slab text-gray-900 text-2xl;
+  @apply font-bold font-roboto-slab text-black text-2xl;
 }
 .description {
-  @apply text-base text-gray-900;
+  @apply text-base text-black;
 }
 @screen sm {
   .title {
