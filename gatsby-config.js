@@ -10,7 +10,7 @@ const contentfulConfig = {
 module.exports = {
   siteMetadata: {
     title: `Geoalert`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Stay aware, analyse and make decisions faster - global geoanalytics platform powered by Earth Observation and AI`,
     author: `@dqunbp`,
     menuLinks: [
       { id: "navbar.products", title: "products", slug: "#products" },
