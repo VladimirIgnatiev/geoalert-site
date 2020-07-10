@@ -82,9 +82,13 @@ const Blog = ({ data }) => {
           ref={containerRef}
           className="flex -mx-2 overflow-x-scroll sm:overflow-hidden"
         >
-          {data.allContentfulBlogpost.edges.map(({ node }, index) => (
-            <BlogPost key={index} {...node} />
-          ))}
+          {data.allContentfulBlogpost.edges
+            .sort((a, b) =>
+              new Date(a.node.date) < new Date(b.node.date) ? 1 : -1
+            )
+            .map(({ node }, index) => (
+              <BlogPost key={index} {...node} />
+            ))}
         </div>
         <button
           aria-label="scroll-left"

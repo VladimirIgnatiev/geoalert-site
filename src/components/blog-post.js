@@ -13,7 +13,6 @@ const BlogPost = ({ image, date, title, writtenBy, postUrl }) => {
       <Img
         title={title}
         fluid={image.fluid}
-        // style={{ width: "413px", height: "290px" }}
         className="space-x-1 w-72 lg:w-96 shadow"
       />
       <p className="text-secondary mt-5">
