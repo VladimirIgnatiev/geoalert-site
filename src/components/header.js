@@ -60,26 +60,27 @@ const Header = () => {
           >
             <ul className="lg:flex-grow lg:flex lg:justify-end">
               {site.siteMetadata.menuLinks.map(({ id, title, slug }, index) => (
-                <div
-                  role="button"
-                  key={id}
-                  tabIndex={index + 1}
-                  className="navbar-item"
-                  onClick={() => isNavExpanded && collapseNav()}
-                  onKeyDown={() => isNavExpanded && collapseNav()}
-                >
-                  <AnchorLink
-                    to={`${
-                      typeof window !== `undefined`
-                        ? window.location.pathname
-                        : ``
-                    }${slug}`}
-                    title={title}
+                <li key={id}>
+                  <div
+                    role="button"
+                    tabIndex={index + 1}
+                    className="navbar-item"
+                    onClick={() => isNavExpanded && collapseNav()}
+                    onKeyDown={() => isNavExpanded && collapseNav()}
                   >
-                    <FormattedMessage id={id} />
-                  </AnchorLink>
-                  <div className="slide hidden lg:block"></div>
-                </div>
+                    <AnchorLink
+                      to={`${
+                        typeof window !== `undefined`
+                          ? window.location.pathname
+                          : ``
+                      }${slug}`}
+                      title={title}
+                    >
+                      <FormattedMessage id={id} />
+                    </AnchorLink>
+                    <div className="slide hidden lg:block"></div>
+                  </div>
+                </li>
               ))}
               <div className="navbar-item mr-0">
                 <Language />

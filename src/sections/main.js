@@ -10,7 +10,7 @@ const Main = ({ intl }) => {
       allContentfulAsset(filter: { title: { eq: "ga-site/main-image" } }) {
         edges {
           node {
-            fluid {
+            fluid(quality: 100) {
               ...GatsbyContentfulFluid_withWebp
             }
           }
