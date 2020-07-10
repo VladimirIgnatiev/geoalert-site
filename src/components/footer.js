@@ -17,7 +17,7 @@ const Footer = () => {
             className="w-8 h-8 flex items-center justify-center"
             rel="noreferrer"
             target="_blank"
-            href="https://twitter.com/geoalert"
+            href="https://twitter.com/geoalertinc"
           >
             <Twitter className="text-black fill-current hover:text-secondary" />
           </a>

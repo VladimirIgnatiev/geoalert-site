@@ -33,7 +33,7 @@ const WhatIs = ({ intl }) => {
             title={intl.formatMessage({ id: "whatIs.title" })}
             width="100%"
             height="100%"
-            src="https://www.youtube-nocookie.com/embed/HUGEWmJ9Mco??autoplay=0&showinfo=0&controls=0"
+            src="https://www.youtube-nocookie.com/embed/hIPaesbdZ3Q??autoplay=0&showinfo=0&controls=0"
             frameBorder="0"
             allowFullScreen
           ></iframe>
