@@ -49,12 +49,12 @@ const WhatIs = ({ intl }) => {
           </p>
         </div>
         <div className="relative mt-24 md:mt-32">
-          <div className="bg-tertiary pb-1/2 sm:pb-5/12 md:pb-4/12 lg:pb-4/12 xl:pb-128">
+          <div className="bg-tertiary pb-1/2 sm:pb-5/12 md:pb-4/12 lg:pb-4/12 xl:pb-112">
             <div
               className="
             h-full
-            absolute inset-0 mx-auto px-4 transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-24
-            container sm:max-w-xl md:max-w-2xl lg:max-w-3xl 3xl:max-w-4xl"
+            absolute inset-0 mx-auto transform -translate-y-12 sm:-translate-y-16 lg:-translate-y-24
+            px-4 sm:px-0 sm:max-w-xl md:max-w-2xl lg:max-w-3xl"
             >
               <div className="w-full h-full bg-teal-500 shadow-xl relative flex justify-center items-center">
                 <Img

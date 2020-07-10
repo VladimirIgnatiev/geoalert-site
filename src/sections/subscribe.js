@@ -11,7 +11,6 @@ const Statuses = {
 }
 
 const Subscribe = ({ intl }) => {
-  // const [error, setError] = React.useState()
   const [status, setStatus] = React.useState("")
   const [email, setEmail] = React.useState("")
 
@@ -76,7 +75,7 @@ const Subscribe = ({ intl }) => {
             asButton
             type="submit"
             className={classnames(
-              "w-full lg:w-auto bg-primary py-3 px-5 mt-6 lg:mt-0 text-white uppercase lg:ml-5 outline-primary",
+              "w-full lg:w-auto bg-primary py-3 px-5 mt-6 lg:mt-0 text-white uppercase lg:ml-5 outline-primary whitespace-no-wrap",
               {
                 "bg-opacity-75": isSuccess,
                 "cursor-not-allowed": disableControls,

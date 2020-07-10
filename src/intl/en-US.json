@@ -25,12 +25,12 @@
     },
     "mapFlow": {
       "title": "Map Flow",
-      "description": "Get analytics, not pixels. Accelerate your data workflow by our imagery analysis platform"
+      "description": "Get analytics, not pixels. Accelerate your data workflow by our imagery analysis platform with instant access to global Earth Observation sources "
     }
   },
   "partners": {
     "title": "Our clients and parners",
-    "description": "We have been honored to partner with these clients"
+    "description": "We have been honored to partner with these companies"
   },
   "blog": {
     "writtenBy": "Written by",
@@ -39,7 +39,7 @@
   },
   "subscribe": {
     "title": "Sign up for email updates",
-    "description": "No spam, only interesting news",
+    "description": "Most recent from the blog and updates on collaborative projects",
     "inputPlaceholder": "Your Email",
     "submitButton": "Sign up",
     "onSubscribing": "Subscribing...",

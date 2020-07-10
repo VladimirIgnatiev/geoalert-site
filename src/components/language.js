@@ -1,6 +1,10 @@
 import React from "react"
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
 
+const LanguageCode = {
+  EN: "EN",
+  RU: "RU",
+}
 const languageName = {
   "en-US": "EN",
   "ru-RU": "RU",
@@ -16,7 +20,9 @@ const Language = ({ className, onToggle }) => (
         }
         return (
           <button className={className} key={language} onClick={toggleLanguage}>
-            {languageName[language]}
+            {languageName[language] === LanguageCode.EN
+              ? LanguageCode.RU
+              : LanguageCode.EN}
           </button>
         )
       }}
