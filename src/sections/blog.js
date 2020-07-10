@@ -26,9 +26,15 @@ const Blog = ({ data }) => {
             <FormattedMessage id="blog.fromOur" />
           </span>
           &nbsp;
-          <span className="text-primary">
-            <FormattedMessage id="blog.blog" />
-          </span>
+          <a
+            href="https://medium.com/@geoalert"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text-primary hover:text-primary-light transition-colors ease-in duration-200">
+              <FormattedMessage id="blog.blog" />
+            </span>
+          </a>
         </h2>
         <div
           className={classnames("hidden sm:block", {

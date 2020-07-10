@@ -47,6 +47,7 @@ const Main = ({ intl }) => {
       </div>
       <div className="flex-1 bg-white mt-8 lg:mt-0">
         <Img
+          loading="eager"
           className="shadow-2xl"
           title={intl.formatMessage({ id: "main.title" })}
           fluid={allContentfulAsset.edges[0].node.fluid}

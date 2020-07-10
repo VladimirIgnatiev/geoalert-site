@@ -8,6 +8,7 @@ const Partners = () => {
       contentfulPartners {
         partnerList {
           file {
+            fileName
             url
           }
         }
@@ -31,13 +32,18 @@ const Partners = () => {
         {contentfulPartners.partnerList.map(({ file }, index) => (
           <div
             key={index}
-            className="mt-8 bg-no-repeat bg-center mx-auto"
+            className="mt-8 mx-auto relative flex items-center justify-center"
             style={{
-              backgroundImage: `url(${file.url})`,
               width: "163px",
               height: "65px",
             }}
-          />
+          >
+            <img
+              alt={file.fileName.split(":")[2].split(".")[0]}
+              loading="lazy"
+              src={file.url}
+            />
+          </div>
         ))}
       </div>
     </section>

@@ -5,7 +5,7 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl"
 import AnchorButton from "../components/anchor-button"
 import PdfFile from "../icons/pdf-file"
 
-const Products = ({ intl, ...props }) => {
+const Products = ({ intl }) => {
   const data = useStaticQuery(graphql`
     {
       productImage: allContentfulAsset(
@@ -36,21 +36,24 @@ const Products = ({ intl, ...props }) => {
     }
   `)
 
+  const pdfLink = data.pdfLinks.edges.filter(({ node }) =>
+    intl.locale.startsWith(node.description)
+  )
+
   return (
     <section id="products" className="mt-12 lg:mt-24">
       <div className="container mx-auto flex justify-between flex-col lg:flex-row">
         <div className="flex-1 flex items-center">
-          <div className="max-w-full lg:max-w-lg">
+          <div className="max-w-full lg:max-w-md xl:max-w-lg">
             <h2 className="title text-primary">
               <FormattedMessage id="products.urbanMapping.title" />
             </h2>
             <p className="description mt-5">
               <FormattedMessage id="products.urbanMapping.description" />
             </p>
-            {/* flex-col sm:flex-row sm:items-center justify-between */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between text-secondary mt-5">
               <AnchorButton
-                link="https://geoalert.github.io/urban-mapping/"
+                link="https://geoalert.github.io/urban-population/"
                 className="pb-1 font-semibold 
                 border-b-2 border-solid border-white hover:border-secondary 
                 transition duration-200 ease-in 
@@ -61,7 +64,8 @@ const Products = ({ intl, ...props }) => {
                 })}
               />
               <a
-                href="https://geoalert.github.io/urban-mapping/"
+                download
+                href={`https:${pdfLink[0].node.file.url}`}
                 target="_blank"
                 rel="noreferrer"
                 className="group mt-5 sm:mt-0 block self-start sm:self-center"
