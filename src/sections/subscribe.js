@@ -53,28 +53,25 @@ const Subscribe = ({ intl }) => {
         </div>
         <form
           className="w-full lg:max-w-xl 
-          flex flex-col lg:flex-row lg:justify-between items-center
+          flex flex-col lg:flex-row lg:justify-end items-center
           mt-6 lg:mt-0"
           onSubmit={handleSubmit}
         >
-          <label htmlFor="email" className="w-full">
-            <span className="hidden">Email</span>
-            <input
-              className={classnames(
-                "w-full lg:w-104 px-4 py-3 rounded-sm outline-primary",
-                { "cursor-not-allowed": disableControls }
-              )}
-              id="email"
-              name="email"
-              type="email"
-              value={email}
-              onChange={handleEmailChange}
-              placeholder={intl.formatMessage({
-                id: "subscribe.inputPlaceholder",
-              })}
-              disabled={disableControls}
-            />
-          </label>
+          <input
+            className={classnames(
+              "w-full lg:w-88 px-4 py-3 rounded-sm outline-primary",
+              { "cursor-not-allowed": disableControls }
+            )}
+            id="email"
+            name="email"
+            type="email"
+            value={email}
+            onChange={handleEmailChange}
+            placeholder={intl.formatMessage({
+              id: "subscribe.inputPlaceholder",
+            })}
+            disabled={disableControls}
+          />
           <AnchorButton
             asButton
             type="submit"
