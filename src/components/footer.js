@@ -50,7 +50,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-black mt-8 sm:mt-0">
-          Copyright © geoalert.io 2019-2020
+          Copyright © geoalert.io 2019-2020.
         </p>
       </div>
     </footer>
