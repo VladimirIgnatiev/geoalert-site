@@ -16,8 +16,8 @@ import Contacts from "../sections/contacts"
 const IndexPage = ({ intl, data }) => (
   <Layout>
     <SEO
-      title={intl.formatMessage({ id: "title" })}
-      description={intl.formatMessage({ id: "description" })}
+      title={intl.formatMessage({ id: "main.title" })}
+      description={intl.formatMessage({ id: "main.description" })}
     />
     <Main />
     <WhatIs />

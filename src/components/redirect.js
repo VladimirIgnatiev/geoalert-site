@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 const Redirect = ({ intl }) => {
   return (
     <SEO
-      title={`${intl.formatMessage({ id: "title" })}`}
-      description={intl.formatMessage({ id: "description" })}
+      title={`${intl.formatMessage({ id: "main.title" })}`}
+      description={intl.formatMessage({ id: "main.description" })}
     />
   )
 }
